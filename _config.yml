@@ -295,6 +295,6 @@ username: imreplay #Github username
 repo: test #Github repo
 branch: master
 relative_source: ../blog/
-destination: ../blog-posts
+destination: ../blog/posts
 production_url:  https://lesslate.github.io/blog # or Your Custom URL
 source_url:  https://github.com/lesslate/blog/ # Github repo URL
