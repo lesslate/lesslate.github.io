@@ -104,16 +104,16 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "안녕하세요"
   location         : "Republic of Korea"
-  email            :
+  email            : "lesslate@naver.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "lesslate"
   foursquare       :
-  github           :
+  github           : "lesslate"
   gitlab           :
   google_plus      :
   keybase          :
