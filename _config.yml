@@ -102,7 +102,7 @@ analytics:
 author:
   name             : "Slate"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "안녕하세요"
+  bio              : ""
   location         : "Republic of Korea"
   email            : "lesslate@naver.com"
   uri              :
