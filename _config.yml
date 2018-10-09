@@ -104,7 +104,7 @@ author:
   avatar           : "/assets/img/Profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "공부를 위한 블로그~"
   location         : "Republic of Korea"
-  email            : "lesslate@naver.com"
+  email            : "lesslate9@naver.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
