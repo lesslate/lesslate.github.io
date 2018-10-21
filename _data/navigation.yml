@@ -9,7 +9,7 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap
 docs:
--title:Category
+- title:"Category"
 children:
     -title:"C++"
     url:/categories/C
