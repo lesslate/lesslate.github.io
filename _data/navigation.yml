@@ -8,3 +8,16 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap
+docs:
+-title:Category
+children:
+    -title:"C++"
+    url:/categories/C
+    -title:"C"
+    url:/categories/C++
+    -title:"Unity"
+    url:/categories/Unity
+    -title:"Unreal4"
+    url:/categories/Unreal4
+    -title:"Portfolio"
+    url:/categories/Portfolio
