@@ -8,7 +8,7 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap
-docs:
+sidebar:
 - title:"Category"
 children:
     -title:"C++"
