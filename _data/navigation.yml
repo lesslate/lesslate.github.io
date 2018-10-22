@@ -1,23 +1,11 @@
-# main links
+
 main:
   - title: "About" # 네비게이션 바에 표시 되는 이름
     url: "/about/" # 클릭시 이동할 URL
   - title: "Category"
     url: /categories/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap
+
+
 sidebar:
-- title:"Category"
-children:
-    -title:"C++"
-    url:/categories/C
-    -title:"C"
-    url:/categories/C++
-    -title:"Unity"
-    url:/categories/Unity
-    -title:"Unreal4"
-    url:/categories/Unreal4
-    -title:"Portfolio"
-    url:/categories/Portfolio
+  title: "Sample Title"
+  nav: sidebar-sample
