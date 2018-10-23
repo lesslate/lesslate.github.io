@@ -1,12 +1,12 @@
 ---
-title: "Post about Blogging"
+title: "Post about C++"
 layout: archive
-permalink: /categories/C++
+permalink: /categories/c++
 author_profile: true
 sidebar_main: true
 ---
 
-{% assign posts = site.categories.C++ | sort:"date" %}
+{% assign posts = site.categories.c++ | sort:"date" %}
 
 {% for post in posts %}
   {% include archive-single.html type=page.entries_layout %}
