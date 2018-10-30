@@ -55,6 +55,7 @@ idle 상태의 애니메이션을 넣어주었습니다.
 ## 총기 발사 모션과 사운드 재생
 
 ![ammo](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/Fire/ammo.png?raw=true)
+
 Int형 변수 ``Ammo`` 생성
 
 ![muzzle](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/Fire/muzzle.png?raw=true)
@@ -118,7 +119,7 @@ Tag값이 Body인경우 Apply Point Damage를 통해
 
 **Blueprint 예시**
 
-<iframe height="400" width="650" marginWidth="10" marginHeight="10" src="https://blueprintue.com/blueprint/repnlw65/" scrolling="no"></iframe>
+<iframe height="400" width="650" marginWidth="10" marginHeight="10" src="https://blueprintue.com/render/repnlw65" scrolling="no"></iframe>
 
 
 
