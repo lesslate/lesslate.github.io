@@ -13,11 +13,40 @@ toc: true
 
 애니메이션 블루프린트와 총기발사 블루프린트 만들어보기
 
-## 클릭 이벤트 생성
+
+## 애니메이션 블루프린트
+
+![animbp](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/Fire/bpanim.png?raw=true)
+
+Animation 블루프린트를 만들어 준다음
+
+![state](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/Fire/state.png?raw=true)
+
+애님그래프에서 State Machine을 추가했습니다.
+
+![state](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/Fire/anim.png?raw=true)
+
+State Machine 내부에 상태를(idle) 정의한뒤
+
+idle 상태의 애니메이션을 넣어주었습니다.
+
+![cache](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/Fire/cache.png?raw=true)
+
+다시 애님그래프로 와서 State Machine의 상태를 캐시포즈로 만들어준다음
+
+캐시포즈를 불러와 애니메이션 몽타주를 사용하기위해 슬롯을 만들어 주었습니다.
+
+
+
+
+## 캐릭터 블루프린트 클릭 이벤트 생성
 
 ![gate](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/Fire/rapid.png?raw=true)
 
-클릭 이벤트 생성후 연속 발사를 위한 Gate생성
+
+캐릭터 블루프린트 이벤트그래프로 넘어와서
+
+클릭 이벤트 생성후 연속 발사를 위한 Gate를 생성합니다.
 
 
 
@@ -39,6 +68,10 @@ Int형 변수 ``Ammo`` 생성
 캐릭터 블루프린트 SkeletalMesh아래에 빈 StaticMesh를 만들고
 부모소켓을 Muzzle로 해두었습니다.
 
+![anim](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/Fire/montage.png?raw=true)
+
+사용할 모션을 몽타주로 만들어주었습니다.
+
 ![fire](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/Fire/fire.png?raw=true)
 
 ![fire2](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/Fire/fire2.png?raw=true)
@@ -59,9 +92,9 @@ Ammo변수가 0이면 Branch에 의해 딸깍거리는 사운드가 재생되며
 
 ![line](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/Fire/linetrace.png?raw=true)
 
-LineTraceForObjects를 만들고 Start 부분에는
+LineTraceForObjects를 만들고 Start 부분에는 카메라의 벡터값 
 
-카메라의 벡터값 끝나는 위치는 20000만큼 떨어진 지점의 벡터값을 넣어준뒤
+끝나는 위치는 20000만큼 떨어진 지점의 벡터값을 넣어준뒤
 
 LineTrace할 오브젝트 타입 배열을 연결시켜주었습니다.
 
