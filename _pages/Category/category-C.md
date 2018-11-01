@@ -1,7 +1,7 @@
 ---
 title: "Post about C"
 layout: archive
-permalink: /categories/c언어
+permalink: /categories/c
 author_profile: true
 sidebar_main: true
 ---
