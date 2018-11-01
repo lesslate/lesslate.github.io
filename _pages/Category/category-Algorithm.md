@@ -1,14 +1,13 @@
 ---
-title: "Post about Cpp
+title: "Post about Algorithm"
 layout: archive
-permalink: /categories/cpp
+permalink: /categories/algorithm
 author_profile: true
 sidebar_main: true
 ---
 
-{% assign posts = site.categories.Cpp | sort:"date" %}
+{% assign posts = site.categories.Algorithm | sort:"date" %}
 
 {% for post in posts %}
   {% include archive-single.html type=page.entries_layout %}
 {% endfor %}
-

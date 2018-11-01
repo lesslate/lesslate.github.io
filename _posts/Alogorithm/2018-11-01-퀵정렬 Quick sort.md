@@ -1,7 +1,7 @@
 ---
 title: "퀵정렬 Quick Sort"
 categories: 
-  - DataStructure
+  - Algorithm
 last_modified_at: 2018-11-01T13:00:00+09:00
 tags:
 - Algorithm
