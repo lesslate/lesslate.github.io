@@ -1,5 +1,5 @@
 ---
-title: "Post about Cpp
+title: "Post about Cpp"
 layout: archive
 permalink: /categories/cpp
 author_profile: true
