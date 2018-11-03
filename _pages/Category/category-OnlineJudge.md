@@ -1,7 +1,7 @@
 ---
-title: "Post about OnlineJudge"
+title: "Post about Online Judge"
 layout: archive
-permalink: /categories/OnlineJudge
+permalink: /categories/onlinejudge
 author_profile: true
 sidebar_main: true
 ---
