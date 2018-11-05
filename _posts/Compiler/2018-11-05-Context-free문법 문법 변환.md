@@ -22,12 +22,14 @@ toc: true
 
 ### 방법1 Terminating nonterminal 을 구하는 방법
 
+
 **Terminating nonterminal**
 
 어떤 nonterminal 심벌이 terminal 스트링을 유도할 수 있을 때,
 ``terminating nonterminal``이라 한다.
 
 **예제**
+
 P={S->A, S->B, B->a}에서 ``terminating nonterminal``을 구해보자
 
 V<sub>N</sub><sup>'</sup>은 생성 규칙의 오른쪽이 모두 terminal만으로 이루어진
@@ -35,12 +37,13 @@ V<sub>N</sub><sup>'</sup>은 생성 규칙의 오른쪽이 모두 terminal만으
 
 V<sub>N</sub><sup>'</sup>={B,S}
 
-따라서 V<sub>N</sub> - V<sub>N</sub><sup>'</sup> = {S,A,B} - {B,S} = {A}
+따라서 V<sub>N</sub> - V<sub>N</sub><sup>'</sup> = {S,A,B} - {B,S} = {A} 이다. 
 
-이다. 그러므로 A를 가진 모든 생성규칙을 제거하면 P' = {S->B, B->a}가 된다.
+그러므로 A를 가진 모든 생성규칙을 제거하면 P' = {S->B, B->a}가 된다.
 
 
 ### 방법2 도달 가능한 심벌을 구하는 방법
+
 
 **예제**
 ```
@@ -60,35 +63,46 @@ V' = {S,a,B,C,b}
 ```
 
 따라서 도달 불가능한 심벌은
+
 ```
 V-V'={S,A,B,C,a,b} - {S,a,B,C,b} = {A}
 ```
+
 이고 도달 불가능한 심벌을 가진 모든 생성규칙을 제거하면
+
 ```
 P' = {S->aB, B->C, C->b}가 된다.
 ```
 
+
 주어진 문법으로부터 필요 없는 생성 규칙을 제거하기 위해서는 위의 방법1을 적용하고 방법2를 적용한다.
+
+
+### 필요 없는 생성 규칙 제거 - 방법1+방법2
 
 **예제**
 ```
-P = {S->aS, S->A, S->B, A->aA, B->a, C->aa}일 때 
+P = {S->aS, S->A, S->B, A->aA, B->a, C->aa}
 ```
+일 때 
+
 terminal 스트링을 유도할 수 있는 nonterminal(Terminating Nonterminal)은
 
 V<sub>N</sub>-V<sub>N</sub><sup>'</sup> = {B,C,S}가 된다.
 
 따라서 A가 terminal 스트링을 생성할 수 없는 nonterminal 이므로
 
-P' = {S->aS, S->B, B->a, C->aa}가 된다. 
+```P' = {S->aS, S->B, B->a, C->aa}```가 된다. 
 
 다음으로 도달 가능한 심벌을 구하면
 
-V'={S,a,B}가 된다. C는 도달 불가능한 심벌이기 때문에
+```V'={S,a,B}```가 된다. C는 도달 불가능한 심벌이기 때문에
 
-P'' = {S->aS, S->B, B->a}가 된다.
+```P'' = {S->aS, S->B, B->a}```가 된다.
 
 P''이 P로부터 구해진 유용한 생성 규칙만으로 이루어진 집합이다.
+
+
 
 
 ## ε-생성 규칙 제거
