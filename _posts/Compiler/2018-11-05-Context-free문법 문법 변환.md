@@ -187,7 +187,7 @@ P'은 단일 생성 규칙을 모두 제거한 것으로 다음과 같다.
 
 첫 번째로 E에 대하여 V<sub>NE</sub>={T,F}가 된다.
 
-V<sub>NE</sub>에 속하는 가 nonterminal의 생성 규칙중 단일 생성 규칙이 
+V<sub>NE</sub>에 속하는 nonterminal의 생성 규칙중 단일 생성 규칙이 
 
 아닌 생성 규칙의 rhs를 E에 대한 생성 규칙으로 만든후 P'에 추가하면
 
