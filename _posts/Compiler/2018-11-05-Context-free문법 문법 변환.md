@@ -221,3 +221,8 @@ F -> (E) | a
 
 
 유도 과정이 많이 짧아진 것을 알수있다.
+
+
+## 참고 문헌
+
+[컴파일러 입문 - 오세만 저](https://book.naver.com/bookdb/book_detail.nhn?bid=6324381)
