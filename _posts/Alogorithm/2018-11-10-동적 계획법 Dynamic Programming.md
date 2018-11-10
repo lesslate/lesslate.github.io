@@ -7,6 +7,7 @@ tags:
 - Algorithm
 - Dynamic Programming
 toc: true
+sidebar_main: true
 ---
 
 ## Intro
