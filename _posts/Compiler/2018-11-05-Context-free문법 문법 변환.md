@@ -148,6 +148,32 @@ S'->S|ε
 S->aSbS|abS|aSb|ab|bSaS|baS|bSa|ba
 ```
 
+**예제 2**
+
+```
+S -> ABC
+A -> BB | ε
+B -> CC | a
+C -> AA | b
+```
+
+A가 ε가 될수있기 때문에 V<sub>Nε</sub> = {A}
+
+C가 AA가 될수있고 AA가 ε가 될 수 있으므로 V<sub>Nε</sub> = {A,C}
+
+B가 CC가 될수있고 CC가 AAAA가되고 AAAA가 ε가 될 수 있으므로 V<sub>Nε</sub> = {A,B,C}
+
+S도 이런식으로 유도하게 되면 V<sub>Nε</sub> = {S,A,B,C}가 된다.
+
+따라서
+
+```
+P' =    S'->S | ε
+        S -> ABC | BC | AC | AB | A | B | C
+        A -> B | BB
+        B -> C | CC | a
+        C -> A | AA | B
+```
 
 
 
