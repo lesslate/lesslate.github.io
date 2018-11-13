@@ -8,6 +8,7 @@ tags:
 - Java
 - Merge Sort
 toc: true
+sidebar_main: true
 ---
 
 ## Intro

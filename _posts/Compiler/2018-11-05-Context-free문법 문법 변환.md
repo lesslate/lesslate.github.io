@@ -6,6 +6,7 @@ last_modified_at: 2018-11-05T13:00:00+09:00
 tags: 
   - Compiler 
 toc: true
+sidebar_main: true
 ---
 
 ## Intro

@@ -8,6 +8,7 @@ tags:
 - Java
 - QuickSort
 toc: true
+sidebar_main: true
 ---
 
 ## Intro
