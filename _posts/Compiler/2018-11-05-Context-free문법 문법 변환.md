@@ -252,4 +252,6 @@ F -> (E) | a
 
 ## 참고 문헌
 
-[컴파일러 입문 - 오세만 저](https://book.naver.com/bookdb/book_detail.nhn?bid=6324381)
+## 참고 저서
+
+[오세만, 컴파일러 입문, 정익사,2010, 182쪽](https://book.naver.com/bookdb/book_detail.nhn?bid=6324381)
