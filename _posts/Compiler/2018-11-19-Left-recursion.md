@@ -2,7 +2,7 @@
 title: "구문 분석 Left-recursion"
 categories: 
   - Compiler
-last_modified_at: 2018-11-05T13:00:00+09:00
+last_modified_at: 2018-11-19T13:00:00+09:00
 tags: 
   - Compiler
 toc: true
@@ -30,7 +30,7 @@ top-down 구문 분석시 같은 생성 규칙이 순환적으로 적용되어
 ## 직접 left-recursion
 
 직접 left-recursion 이란 생성 규칙에서 A -> Aa와 같이 
-직접적으로 나타나는 경우이며,
+직접적으로 나타나는 경우이며
 
 이를 제거하는 방법은 다음과 같다.
 
