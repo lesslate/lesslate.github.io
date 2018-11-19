@@ -15,7 +15,7 @@ Juicy Salif 모델링 과정
 
 ![juicy](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/rhino/juicy/230227876.jpg?raw=true)
 
-**Juicy Salif
+**Juicy Salif**
 
 
 ## 몸통 스케치
