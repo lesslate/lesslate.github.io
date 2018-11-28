@@ -2,7 +2,7 @@
 permalink: /about/
 title: "About"
 excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
-last_modified_at: 2018-10-26T12:04:24-04:00
+last_modified_at: 2018-11-29:04:24-04:00
 toc: true
 sidebar_main: true
 ---
@@ -20,7 +20,7 @@ sidebar_main: true
 
 ## 자격증
 
-2018-11-28 정보처리기사 취득
+2018-11-16 정보처리기사 취득
 
 ---
 
