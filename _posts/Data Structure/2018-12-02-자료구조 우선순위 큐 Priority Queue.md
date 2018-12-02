@@ -6,6 +6,7 @@ last_modified_at: 2018-12-02T13:00:00+09:00
 tags:
 - DataStructure
 - Priority Queue
+- Java
 toc: true
 sidebar_main: true
 ---
@@ -46,7 +47,7 @@ sidebar_main: true
 
 결국 데이터량이 많아질수록 비교량이 많아지므로 성능이 저하된다.
 
-그렇기 때문에 주로 우선순위 큐는 ``힙(Heap)``을 이용해서 구현한다.
+그렇기 때문에 주로 우선순위 큐는 ``힙(Heap)``을 이용해서 구현한다.[^2]
 
 [^2]:[참고블로그](http://hannom.tistory.com/36)
 
@@ -105,6 +106,10 @@ sidebar_main: true
 
 <script src="https://gist.github.com/lesslate/63a8e53f51cae23a87902668cb4a5f8e.js"></script>
 
+## 실행 결과
+
+![10](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/DataStructure/PriorityQueue/10.png?raw=true)
 
 ## 참고자료
+
 
