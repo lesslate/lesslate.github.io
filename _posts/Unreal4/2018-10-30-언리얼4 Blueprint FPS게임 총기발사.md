@@ -117,7 +117,7 @@ Tag값이 Body인경우 Apply Point Damage를 통해
 
 
 
-**Blueprint 예시**
+## Blueprint 예시
 
 <iframe height="400" width="650" marginWidth="10" marginHeight="10" src="https://blueprintue.com/render/repnlw65" scrolling="no"></iframe>
 
