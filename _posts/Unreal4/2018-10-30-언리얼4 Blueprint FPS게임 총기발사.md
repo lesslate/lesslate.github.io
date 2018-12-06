@@ -23,19 +23,19 @@ Animation 블루프린트를 만들어 준다음
 
 ![state](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/Fire/state.png?raw=true)
 
-애님그래프에서 State Machine을 추가했습니다.
+애님그래프에서 State Machine을 추가
 
 ![state](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/Fire/anim.png?raw=true)
 
 State Machine 내부에 상태를(idle) 정의한뒤
 
-idle 상태의 애니메이션을 넣어주었습니다.
+idle 상태의 애니메이션을 넣어준다.
 
 ![cache](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/Fire/cache.png?raw=true)
 
 다시 애님그래프로 와서 State Machine의 상태를 캐시포즈로 만들어준다음
 
-캐시포즈를 불러와 애니메이션 몽타주를 사용하기위해 슬롯을 만들어 주었습니다.
+캐시포즈를 불러와 애니메이션 몽타주를 사용하기위해 슬롯을 만들어 주었다.
 
 
 
@@ -47,8 +47,7 @@ idle 상태의 애니메이션을 넣어주었습니다.
 
 캐릭터 블루프린트 이벤트그래프로 넘어와서
 
-클릭 이벤트 생성후 연속 발사를 위한 Gate를 생성합니다.
-
+클릭 이벤트 생성후 연속 발사를 위한 Gate를 생성
 
 
 
@@ -68,11 +67,11 @@ Int형 변수 ``Ammo`` 생성
 스켈레톤 파일에서 Silencer 아래에 Muzzle 소켓을 추가한뒤
 
 캐릭터 블루프린트 SkeletalMesh아래에 빈 StaticMesh를 만들고
-부모소켓을 Muzzle로 해두었습니다.
+부모소켓을 Muzzle로 해두었다.
 
 ![anim](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/Fire/montage.png?raw=true)
 
-사용할 모션을 몽타주로 만들어주었습니다.
+사용할 모션을 몽타주로 만들어준다.
 
 ![fire](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/Fire/fire.png?raw=true)
 
@@ -82,7 +81,7 @@ Ammo변수가 0이면 Branch에 의해 딸깍거리는 사운드가 재생되며
 
 0이 아니라면 Ammo변수를 1감소시킨 후 총기 발사 모션과 발사 사운드 재생과
 
-동시에 미리 만들어둔 Muzzle에서 총구 화염을 표시합니다
+동시에 미리 만들어둔 Muzzle에서 총구 화염을 표시
 
 
 
@@ -102,7 +101,7 @@ LineTrace할 오브젝트 타입 배열을 연결시켜주었습니다.
 
 무시하려는 값은 자신이므로 Self 배열을 넣고 눈으로 확인하기위해
 
-Draw Debug Type을 켜주었습니다.
+Draw Debug Type을 켜준다.
 
 
 
@@ -114,7 +113,7 @@ Tag값이 Body인경우 Apply Point Damage를 통해
 
 50의 데미지를 주고 피 이펙트가 터지도록 했으며 
 
-그외에 벽,사물 같은 오브젝트는 연기 이펙트가 터지도록 했습니다.
+그외에 벽,사물 같은 오브젝트는 연기 이펙트가 터지도록 했다.
 
 
 

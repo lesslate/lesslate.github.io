@@ -22,7 +22,7 @@ sidebar_main: true
 
 ## 뷰포트 1인칭 설정
 
-사용할 3D 총기 에셋을 임포트합니다
+사용할 3D 총기 에셋을 임포트
 
 ![hk](https://github.com/lesslate/blog/blob/master/assets/img/Unreal/hk416.png?raw=true)
 
@@ -35,7 +35,7 @@ sidebar_main: true
 
 Mesh아래에 Camera와 Camera아래에 사용할 스켈레탈 메시를 넣어준뒤
 
-카메라앞에 맞춰주었습니다.
+카메라앞에 맞춰주었다
 
 ![mesh2](https://github.com/lesslate/blog/blob/master/assets/img/Unreal/unreal2.png?raw=true)
 
@@ -46,7 +46,7 @@ Turn 입력 축과 LookUp입력 축을 가져와 카메라를 제어하는 블�
 ![cam](https://github.com/lesslate/blog/blob/master/assets/img/Unreal/camera.png?raw=true)
 
 MoveForward,MoveRight 입력축을 이용해 캐릭터를 월드상에서 이동할 수 있게하는 블루프린트
-(중간에 변수를 저장시켜 애니메이션 블루프린트에서 사용할수있게했습니다.) 
+(중간에 변수를 저장시켜 애니메이션 블루프린트에서 사용할수있게함.) 
 
 ![move](https://github.com/lesslate/blog/blob/master/assets/img/Unreal/Move.png?raw=true)
 
@@ -55,7 +55,7 @@ MoveForward,MoveRight 입력축을 이용해 캐릭터를 월드상에서 이동
 Jump키 (Space)가 Pressed 상태일때 캐릭터를 점프시키고 Released 상태일때 점프를 중단하는 블루프린트
 
 왼쪽 Shift키를 누르면 Character Movement의 Walk Speed값을 늘려 이동속도를 빠르게하는 블루프린트
-(마찬가지로 변수를 저장시켜 애니메이션 블루프린트에서 활용할수있게했습니다.)
+(마찬가지로 변수를 저장시켜 애니메이션 블루프린트에서 활용할수있게함.)
 
 ![jump](https://github.com/lesslate/blog/blob/master/assets/img/Unreal/jumpsprint.png?raw=true)
 
