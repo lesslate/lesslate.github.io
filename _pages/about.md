@@ -2,19 +2,19 @@
 permalink: /about/
 title: "About"
 excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
-last_modified_at: 2018-11-29T12:04:24-04:00
+last_modified_at: 2018-12-06T12:04:24-04:00
 toc: true
 sidebar_main: true
 ---
 
 ## 소개
 
-훌륭한 개발자가 되기위한 과정을 기록하는 블로그
+개인 공부 블로그
 
 
 ## 관심 분야
 
-게임 프로그래밍
+Unity, Unreal4, C#, C++
 
 
 
