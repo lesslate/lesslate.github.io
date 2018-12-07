@@ -13,7 +13,7 @@ sidebar_main: true
 
 ## Intro
 
-퀵 정렬 알고리즘을 이해하고 구현해보기
+> - 퀵 정렬 알고리즘을 이해하고 구현해보기
 
 
 ## 퀵정렬(Quick Sort)

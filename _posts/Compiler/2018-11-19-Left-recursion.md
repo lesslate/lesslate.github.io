@@ -11,7 +11,7 @@ sidebar_main: true
 
 ## Intro
 
-Left-recursive한 문법 변환
+> - Left-recursive한 문법 변환
 
 
 

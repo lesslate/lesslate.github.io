@@ -11,7 +11,7 @@ sidebar_main: true
 
 ## Intro
 
-Left-factoring 
+> - Left-factoring 
 
 
 

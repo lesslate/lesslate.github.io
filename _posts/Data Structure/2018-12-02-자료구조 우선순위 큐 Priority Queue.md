@@ -13,7 +13,7 @@ sidebar_main: true
 
 ## Intro
 
-우선 순위큐에 대한 이해
+> - 우선 순위큐에 대한 이해
 
 
 
