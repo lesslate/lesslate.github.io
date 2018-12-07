@@ -11,7 +11,7 @@ sidebar_main: true
 
 ![1](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unity/package/8.png?raw=true)
 
-Unity로 제작한 플랫폼 게임
+> - Unity로 제작한 플랫폼 게임
 
 
 ## 제작 동기
