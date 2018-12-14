@@ -61,14 +61,14 @@ Predictive 파싱 테이블의 크기는 항상 ![3](https://github.com/lesslate
 1. S -> aS
 2. S -> bA
 3. A -> d
-4. A -. ccA
+4. A -> ccA
 ```
 
 **파싱 테이블**
 
 ![6](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/compiler/predictiveparser/6.png?raw=true)
 
-** predictive 구문 분석 **
+**predictive 구문 분석**
 
 ![5](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/compiler/predictiveparser/5.png?raw=true)
 
