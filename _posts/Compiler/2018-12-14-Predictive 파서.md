@@ -39,7 +39,7 @@ Predictive 파싱 테이블의 크기는 항상 ![3](https://github.com/lesslate
 1이 더해지는 이유는 입력의 끝을 나타내는 $이 있기 때문이다.
 
 
-**파싱 테이블 예제**
+> 파싱 테이블 예제
 
 ```
 1. S -> aSb
@@ -47,13 +47,15 @@ Predictive 파싱 테이블의 크기는 항상 ![3](https://github.com/lesslate
 3. A -> aA
 4. A -> b
 ```
-> 파싱 테이블
+**파싱 테이블**
 
 ![4](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/compiler/predictiveparser/4.png?raw=true)
 
 여기서 빈 엔트리는 에러를 나타내며 스택 top이 S이고 입력심벌이 a라면 1번 생성 규칙으로 확장하라는 의미이다.
 
-**구문 분석 예제**
+
+
+> 구문 분석 예제
 
 ```
 1. S -> aS
@@ -62,11 +64,11 @@ Predictive 파싱 테이블의 크기는 항상 ![3](https://github.com/lesslate
 4. A -. ccA
 ```
 
-> 파싱 테이블
+**파싱 테이블**
 
 ![6](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/compiler/predictiveparser/6.png?raw=true)
 
-> predictive 구문 분석
+** predictive 구문 분석 **
 
 ![5](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/compiler/predictiveparser/5.png?raw=true)
 
