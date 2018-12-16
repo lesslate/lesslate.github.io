@@ -38,7 +38,7 @@ A -> αβ | αγ
 **예시**
 
 ```
-S -> iCtS | ictSeS | a
+S -> iCtS | iCtSeS | a
 C -> b
 ```
 
