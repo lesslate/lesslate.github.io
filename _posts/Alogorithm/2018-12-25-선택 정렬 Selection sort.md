@@ -31,7 +31,7 @@ n개의 주어진 리스트를 정렬하는 데에는 Θ(n2) 만큼의 시간이
 
 ## 예제 
 
-![1](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Algorithm/bubble/1.png?raw=true)
+![1](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Algorithm/SELECTION/1.png?raw=true)
 
 
 
@@ -68,5 +68,5 @@ n개의 주어진 리스트를 정렬하는 데에는 Θ(n2) 만큼의 시간이
 ## 참고자료
 
 
-[Heee's 블로그](https://gmlwjd9405.github.io/2018/05/06/algorithm-bubble-sort.html)
+[Heee's 블로그](https://gmlwjd9405.github.io/2018/05/06/algorithm-selection-sort.html)
 
