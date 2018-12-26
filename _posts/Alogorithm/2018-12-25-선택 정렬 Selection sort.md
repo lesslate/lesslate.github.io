@@ -57,7 +57,7 @@ n개의 주어진 리스트를 정렬하는 데에는 Θ(n2) 만큼의 시간이
 
 ## 자바 구현
 
-<script src="https://gist.github.com/lesslate/2473ea9f98f30dfdd94ea27f631b7d16.js"></script>
+<script src="https://gist.github.com/lesslate/d6b8a25ba4633660805800d992bf1903.js"></script>
 
 ## 실행 결과
 
