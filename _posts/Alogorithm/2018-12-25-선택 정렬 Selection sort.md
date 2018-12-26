@@ -2,7 +2,7 @@
 title: "선택 정렬 Selection Sort"
 categories: 
   - Algorithm
-last_modified_at: 2018-12-21T13:00:00+09:00
+last_modified_at: 2018-12-25T13:00:00+09:00
 tags:
 - Algorithm
 - Selection Sort
@@ -36,24 +36,30 @@ n개의 주어진 리스트를 정렬하는 데에는 Θ(n2) 만큼의 시간이
 
 
 
-## 버블 정렬의 시간 복잡도
+## 선택 정렬의 시간복잡도
 
 >비교 횟수
 
-* 최상, 평균, 최악 모두 일정
+* 두개의 for문 외부 루프 (n-1)번
 
-* n-1, n-2, ... ,2, 1 번 = n(n-1)/2
+* 내부 루프(최솟값 찾기) : n-1, n-2, ..., 2, 1번
 
 >교환 횟수
 
-* 역순으로 정렬되어 있는 최악의 경우, 한번 교환시 3번의 이동 필요 = 3n(n-1)/2
+* 외부 루프의 실행 횟수
 
-* 최상의 경우 이미 정렬되어 있으므로 교환 하지않음
-
-
-> T(n)=O(n<sup>2</sup>)
+* 한번 교환시 3번의 이동 3(n-1)
 
 
+> T(n)=(n-1) + (n-2) + ... + 2 + 1 = n(n-1)/2 = O(n<sup>2</sup>)
+
+## 선택 정렬의 특징
+
+시간 복잡도 O(n<sup>2</sup>)인 정렬 알고리즘 중에서 선택 정렬은 버블 정렬보다 항상 우수하다
+
+장점 : 자료 이동 횟수가 미리 결정된다. (메모리가 제한적인 경우에 사용시 성능 상의 이점이 있다)
+
+단점 : 안정성을 만족하지 않는다. 값이 같은 레코드가 있는 경우 상대적인 위치가 변경될 수 있다.
 
 ## 자바 구현
 
@@ -61,7 +67,7 @@ n개의 주어진 리스트를 정렬하는 데에는 Θ(n2) 만큼의 시간이
 
 ## 실행 결과
 
-![2](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Algorithm/bubble/2.png?raw=true)
+![2](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Algorithm/SELECTION/2.png?raw=true)
 
 
 
