@@ -24,7 +24,7 @@ sidebar_main: true
 
 ![1](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/rhino/juicy/1.png?raw=true)
 
-Front View에서 모델 사진을 가져온 뒤 중심선을 그었다
+Front View에서 모델 사진을 가져온 뒤 중심선을 그림
 
 
 
@@ -34,7 +34,7 @@ Front View에서 모델 사진을 가져온 뒤 중심선을 그었다
 
 보간점 커브를 이용해 틀을 그리고 윗부분이 뾰족해지지않게
 
-제어점을 선에대해 수직으로 맞추었다.
+제어점을 선에대해 수직으로 맞춘다음
 
 
 
@@ -49,7 +49,7 @@ Front View에서 모델 사진을 가져온 뒤 중심선을 그었다
 
 ![4](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/rhino/juicy/44.png?raw=true)
 
-Top뷰로와서 원안에 원을 그려주었다.
+Top뷰로와서 원안에 원을 그림
 
 
 
@@ -57,7 +57,7 @@ Top뷰로와서 원안에 원을 그려주었다.
 
 ![5](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/rhino/juicy/555.png?raw=true)
 
-원형 배열을 통해 360도로 12개의 원을 채웠다.
+원형 배열을 통해 360도로 12개의 원을 채움
 
 
 
@@ -67,7 +67,7 @@ Top뷰로와서 원안에 원을 그려주었다.
 
 안쪽 부분을 ``Trim``으로 제거해준다음 (커브도 Trim 할 수 있으니 주의)
 
-바깥 원을 삭제한 뒤 만들어진 모양을 합병해주었다. 
+바깥 원을 삭제한 뒤 만들어진 모양을 합병
 
 
 
@@ -77,7 +77,7 @@ Top뷰로와서 원안에 원을 그려주었다.
 
 서피스 도구에서 레일 회전을 선택하고
 
-커브와 원형 틀을 선택 한뒤 서피스를 생성 해주었다.
+커브와 원형 틀을 선택 한뒤 서피스를 생성
 
 
 
@@ -90,7 +90,7 @@ Top뷰로와서 원안에 원을 그려주었다.
 마찬가지로 보간점 커브를 이용해 다리틀을 그리고
 
 
-그리고 두 커브사이 중간단계 도구를 이용해 중간 선을 만들어주었다.
+그리고 두 커브사이 중간단계 도구를 이용해 중간 선을 만들어줌
 
 
 
@@ -98,7 +98,7 @@ Top뷰로와서 원안에 원을 그려주었다.
 
 ![9](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/rhino/juicy/99.png?raw=true)
 
-끝부분에 구성평면에 수직인 원을 그려주었다. 
+끝부분에 구성평면에 수직인 원을 그림
 
 
 3.
@@ -109,7 +109,7 @@ Top View로 와서 중심 선을 선택해
 
 원 아래쪽에 붙이고 ``Rotate``를 통해 약간 회전시킨 뒤
 
-``Mirror`` 해주었다.
+``Mirror`` 해준다.
 
 
 ## 다리 폴리서피스 생성
