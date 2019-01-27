@@ -1,5 +1,5 @@
 ---
-title: "Git에서 불필요한 파일"
+title: "언리얼4 .gitignore"
 categories: 
   - Unreal4
 last_modified_at: 2019-01-27T13:00:00+09:00
@@ -12,10 +12,10 @@ sidebar_main: true
 
 ## Intro
 
-> - 언리얼4 불필요한 파일 
+> - 언리얼4 .gitignore
 
 
-## Git에서 불필요한 파일들
+## 언리얼 프로젝트에서 불필요한 파일들
 
 ```
 /Binaries
@@ -26,7 +26,7 @@ sidebar_main: true
 /.VC.db
 ```
 
-## .gitignore파일
+## .gitignore
 
 
 ```
@@ -453,4 +453,5 @@ healthchecksdb
 ## 참고문서
 
 [https://zenoahn.tistory.com/33](https://zenoahn.tistory.com/33)
+
 [https://www.gitignore.io/](https://www.gitignore.io/)
