@@ -17,31 +17,8 @@ sidebar_main: true
 
 
 **추가**
-```
-<nav class="nav__list">
-  <input id="ac-toc" name="accordion-toc" type="checkbox" />
-  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
-  <ul class="nav__items" id="category_tag_menu">
-      <li>
-        <span class="nav__sub-title" v-on:click='togglec()'>Categories</span>
-        <ul v-show="flag_c">
-        {% for category in site.categories %}
-           <li><a href="/categories/{{category[0] | slugify}}" class="">{{category[0] | capitalize}} ({{category[1].size}})</a></li>
-        {% endfor %}
-        </ul>
-        
-        <span class="nav__sub-title" v-on:click='togglet()'>tags</span>
-        <ul v-show="flag_t">
-        {% for tag in site.tags %}
-           <li><a href="/tags/#{{tag[0] | slugify}}" class="">{{tag[0] | capitalize }} ({{tag[1].size}})</a></li>
-        {% endfor %}
-        </ul>
-        
-      </li>
-    
-  </ul>
-</nav>
-```
+
+<script src="https://gist.github.com/lesslate/bbd03fd531e5eba8407185b4d7904bf6.js"></script>
 
 카테고리들과 태그들을 읽어서 보여주고 클릭시 토글기능 추가
 
@@ -50,26 +27,8 @@ sidebar_main: true
 ## _includes/script.html 수정
 
 **추가**
-```
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
- <script>
-  new Vue({
-    el : '#category_tag_menu',
-    data : {
-      flag_c : true,
-      flag_t : false
-    },
-    methods : {
-      togglec: function(){
-        this.flag_c = !this.flag_c;
-      },
-      togglet: function(){
-        this.flag_t = !this.flag_t;
-      }
-    }
-  });
- </script> 
-```
+
+<script src="https://gist.github.com/lesslate/2b5a33e9c099f3891f0e720c237d05a8.js"></script>
 
 클릭시 flag 값 변경으로 토글
 
@@ -78,11 +37,8 @@ sidebar_main: true
 ## _includes/sidebar.html 수정
 
 **추가**
-```
-{% if page.sidebar_main %}
-    {% include nav_list_main %}
-  {% endif %}
-```
+
+<script src="https://gist.github.com/lesslate/e12edb6f6a1978acd33db0cca37dc0b7.js"></script>
 
 sidebar_main 이라는 변수가 있으면
 
