@@ -13,7 +13,7 @@ sidebar_main: true
 
 > - Back to Top 버튼 추가
 
-## _sidebar.scss 수정
+## _sass/minimal-mistakes/_sidebar.scss 수정
 
 
 **추가**
@@ -26,7 +26,7 @@ sidebar_main: true
 }
 ```
 
-## default.html 수정
+## _layouts/default.html 수정
 
 **추가**
 ```
@@ -39,4 +39,5 @@ sidebar_main: true
 ## 참고문서
 
 [commit](https://github.com/lesslate/lesslate.github.io/commit/ce2cccc83054c8d192f98a10f8a6a3af3e1d9a65)
+
 [관련 문서](https://github.com/mmistakes/minimal-mistakes/issues/1731)
