@@ -32,8 +32,11 @@ private:
 
 플레이어가 바라보는 방향과 `Reach`를 이용하여 LineTraceEnd 저장
 
+```cpp
+
 FVector LineTraceEnd = PlayerViewPointLocation + PlayerViewPointRotation.Vector()*Reach;
 
+```
 
 DrawDebugLine 함수로 디버그 라인 생성 
 
