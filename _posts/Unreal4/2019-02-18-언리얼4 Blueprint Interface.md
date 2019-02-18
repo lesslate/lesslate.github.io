@@ -1,5 +1,5 @@
 ---
-title: "언리얼4 C++ Blueprint Interface"
+title: "언리얼4 Blueprint Interface"
 categories: 
   - Unreal4
 last_modified_at: 2019-02-18T13:00:00+09:00
@@ -44,13 +44,15 @@ sidebar_main: true
 
 > 각기 다른 이벤트 설정
 
-![4](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/interface/4.png?raw=true)
-
 Door_BP에서는 문을 열거나 닫을 수 있고
 
-![7](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/interface/7.png?raw=true)
+![4](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/interface/4.png?raw=true)
+
 
 Lamp_BP에서는 `램프`라는 메시지 출력
+
+
+![7](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/interface/7.png?raw=true)
 
 
 
