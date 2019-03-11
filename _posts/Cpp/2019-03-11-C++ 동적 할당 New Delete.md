@@ -1,8 +1,8 @@
 ---
-title: "동적 메모리 할당 new delete"
+title: "C++ 동적 메모리 할당 new delete"
 categories: 
   - Cpp
-last_modified_at: 2019-03-09T13:00:00+09:00
+last_modified_at: 2019-03-11T13:00:00+09:00
 tags: 
   - C++
   - DynamicMemoryAllocation
