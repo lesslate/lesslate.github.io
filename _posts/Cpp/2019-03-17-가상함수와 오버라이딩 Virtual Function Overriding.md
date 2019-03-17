@@ -1,5 +1,5 @@
 ---
-title: "가상 함수와 오버라이딩 Virtual Function & Overriding"
+title: "C++ 가상 함수와 오버라이딩 Virtual Function & Overriding"
 categories: 
   - Cpp
 last_modified_at: 2019-03-17T13:00:00+09:00
