@@ -8,7 +8,7 @@ $serif : "Sawarabi Mincho", "Nanum Myeongjo";
 $sans-serif : "Sawarabi Gothic", "Nanum Gothic";
 $monospace : "IBM Plex Mono";
 
-$doc-font-size: 13;
+$doc-font-size: 12;
 $indent-var: 1.2em;
 
 /* type scale */
@@ -43,6 +43,5 @@ $global-transition : none;
 
 $large: 1280px; 
 $x-large: 1440px; 
-
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
