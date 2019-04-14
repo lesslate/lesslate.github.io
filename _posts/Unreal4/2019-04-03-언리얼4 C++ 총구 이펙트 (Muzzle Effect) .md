@@ -1,5 +1,5 @@
 ---
-title: "언리얼4 C++ 총구 이펙트"
+title: "언리얼4 C++ 총구 이펙트 (Muzzle Effect)"
 categories: 
   - Unreal4
 last_modified_at: 2019-04-03T13:00:00+09:00

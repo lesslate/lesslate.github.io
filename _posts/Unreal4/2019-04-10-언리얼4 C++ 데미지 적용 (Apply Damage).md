@@ -1,5 +1,5 @@
 ---
-title: "언리얼4 C++ 데미지 적용"
+title: "언리얼4 C++ 데미지 적용 (Apply Damage)"
 categories: 
   - Unreal4
 last_modified_at: 2019-04-10T13:00:00+09:00
