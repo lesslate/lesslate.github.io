@@ -17,12 +17,14 @@ sidebar_main: true
 ## 스폰할 액터 저장
 
 > 탄창 액터 선언
+
 ```cpp
 UPROPERTY(EditAnywhere)
 TSubclassOf<class AActor> AmmoBlueprint;
 ```
 
 > 인스턴스 저장
+
 ```cpp
 static ConstructorHelpers::FObjectFinder<UBlueprint> AmmoItem(TEXT("Blueprint'/Game/Weapon/Ammo.Ammo'"));
 if (AmmoItem.Object)
