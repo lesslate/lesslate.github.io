@@ -50,4 +50,3 @@ sidebar_main: true
 
 [https://opentutorials.org/module/1335/8940](https://opentutorials.org/module/1335/8940)
 
-[https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B2%B0_%EB%A6%AC%EC%8A%A4%ED%8A%B8](https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B2%B0_%EB%A6%AC%EC%8A%A4%ED%8A%B8)
