@@ -138,4 +138,4 @@ size : 0 capacity : 10
 
 [http://www.cplusplus.com/reference/vector/vector/](http://www.cplusplus.com/reference/vector/vector/)
 
-[https://ko.wikipedia.org/wiki/%EB%B2%A1%ED%84%B0_(STL)](https://ko.wikipedia.org/wiki/%EB%B2%A1%ED%84%B0_(STL))
+[위키백과](https://ko.wikipedia.org/wiki/%EB%B2%A1%ED%84%B0_(STL))
