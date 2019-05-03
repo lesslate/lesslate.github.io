@@ -116,7 +116,7 @@ void ABomb::BeginPlay()
 }
 ```
 
-마찬가지로 터지게 폭탄은 `Bomb`이라는 함수를 바인드 해준다.
+마찬가지로 터지게할 폭탄은 `Bomb`이라는 함수를 바인드 해준다.
 
 > 바인드된 함수들 호출
 
@@ -154,7 +154,7 @@ void AFPSPlayer::Interaction_Implementation()
 
 ## 실행 결과
 
-<iframe width="560" height="315" src="https://youtu.be/Jihbwjq_jgY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Jihbwjq_jgY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 참고문서
 
