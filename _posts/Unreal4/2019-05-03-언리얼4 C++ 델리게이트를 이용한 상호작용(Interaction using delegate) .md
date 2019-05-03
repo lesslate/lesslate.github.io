@@ -33,7 +33,7 @@ C++에서의 함수 포인터는 복잡하고 안정성이 떨어지는 방식�
 
 상호작용할 액터를 추가하고 오버랩이벤트를 발생시키도록 한다.
 
-2[2](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/Delegate/2.png?raw=true) 
+![2](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/Delegate/2.png?raw=true) 
 
 오버랩 이벤트가 발생하면 UI 텍스트를 띄우고 오버랩 변수를 `true`로 변경
 
