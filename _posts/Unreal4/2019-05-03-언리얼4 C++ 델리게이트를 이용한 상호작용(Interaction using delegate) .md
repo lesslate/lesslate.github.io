@@ -2,7 +2,7 @@
 title: "언리얼4 C++ 델리게이트를 이용한 상호작용(Interaction using delegate)"
 categories: 
   - Unreal4
-last_modified_at: 2019-04-26T13:00:00+09:00
+last_modified_at: 2019-05-03T13:00:00+09:00
 tags: 
   - unreal4 
   - C++
