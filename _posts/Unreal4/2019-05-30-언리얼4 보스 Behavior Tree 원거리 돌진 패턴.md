@@ -1,5 +1,5 @@
 ---
-title: "언리얼4 Behavior Tree 원거리 패턴"
+title: "언리얼4 Behavior Tree 원거리 돌진 패턴"
 categories: 
   - Unreal4
 last_modified_at: 2019-05-30T13:00:00+09:00
