@@ -1,5 +1,5 @@
 ---
-title: "언리얼4 Behavior Tree 몬스터 좌우 판별"
+title: "언리얼4 보스 Behavior Tree 몬스터 좌우 판별"
 categories: 
   - Unreal4
 last_modified_at: 2019-05-30T13:00:00+09:00
