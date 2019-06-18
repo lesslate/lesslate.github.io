@@ -30,7 +30,7 @@ sidebar_main: true
 
 ![1](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/BackJump/1.png?raw=true)
 
-몬스터의 `Forward Vector`를 구한다음 반대쪽 벡터를 곱해준다음 Z값을 300더해 뒤로 Launch 시키도록 했다.
+몬스터의 `Forward Vector`를 구한다음 벡터를 반대쪽으로 뒤집어준다음 Z값에 300더해 뒤로 점프 시키도록 했다.
 
 `Add Impulse` 나 `Add Force`보다 `Launch Character` 함수를 사용하여 좀더 자연스럽게 점프시킬수 있었다.
 
