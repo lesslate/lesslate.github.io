@@ -85,7 +85,7 @@ void UBTService_RandomNumber::OnBecomeRelevant(UBehaviorTreeComponent& OwnerComp
 ![2](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/SelectRandom/2.png?raw=true) 
 
 마찬가지로 원거리 패턴에도 똑같이 적용시켜준다.
-![GIF](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Unreal/BackJump/GIF.gif?raw=true)
+
 
 > 서비스 추가
 
