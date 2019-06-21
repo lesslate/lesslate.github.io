@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "Slate"
-  avatar           : "/assets/img/Profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/img/Profile2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "The journey is the reward."
   location         : "Republic of Korea"
   email            : "lesslate9@naver.com"
