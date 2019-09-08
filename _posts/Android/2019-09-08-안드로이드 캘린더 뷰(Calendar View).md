@@ -49,12 +49,15 @@ long getDate()
 
 
 ```java
-void setDate(long date [, boolean animate, boolean center])```
+void setDate(long date [, boolean animate, boolean center])
+```
+
 
 날짜 변경 메서드
 
 ```java
-void setOnDateChangeListener(CalendarView.OnDateChangeListener listener)```
+void setOnDateChangeListener(CalendarView.OnDateChangeListener listener)
+```
 
 날짜가 변경될 때 이벤트를 받기 위한 리스너
 
