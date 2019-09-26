@@ -1,5 +1,5 @@
 ---
-title: "안드로이드 테마 바꾸기"
+title: "안드로이드 Shared Preference"
 categories: 
   - Android
 last_modified_at: 2019-09-26T13:00:00+09:00
@@ -14,249 +14,75 @@ sidebar_main: true
 
 ## Intro
 
-> 테마 바꾸기
+> Shared Preference 알아보기
 
 
-## Styles.xml 테마 추가
+## Share Preference
 
-> styles 에서 사용할 아이템 attrs.xml 생성 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <declare-styleable name="ds">
-        <attr name="backgroundcolor" format="color"/>
-        <attr name="cardbackground" format="color"/>
-        <attr name="textcolor" format="color"/>
-        <attr name="tintcolor" format="color"/>
-        <attr name="buttoncolor" format="color"/>
-        <attr name="navibackground" format="color"/>
-        <attr name="navitint" format="color"/>
-    </declare-styleable>
+`Share Preference`는 안드로이드에서 Key/Value 형태의 자료구조로 데이터를 저장할 수있는 방식이다.
 
-</resources>
-```
+대용량데이터일 때 로딩이 느리므로 주료 간단한 설정을 저장하는데 사용한다.
 
-> styles.xml에 테마 정의
-
-```xml
-<resources>
-
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="backgroundcolor">#FCFCFC</item>
-        <item name="cardbackground">#FFFFFF</item>
-        <item name="textcolor">#808080</item>
-        <item name="tintcolor">#FFFFFF</item>
-        <item name="buttoncolor">#2196F3</item>
-        <item name="navibackground">#FFFFFF</item>
-        <item name="navitint">#000000</item>
-    </style>
-
-    <!--  Dark Theme -->
-    <style name="DarkTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">#212121</item>
-        <item name="colorPrimaryDark">#000000</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="backgroundcolor">#303030</item>
-        <item name="cardbackground">#424242</item>
-        <item name="textcolor">#FFFFFF</item>
-        <item name="tintcolor">#FFFFFF</item>
-        <item name="buttoncolor">#2196F3</item>
-        <item name="navibackground">@color/darkblack</item>
-        <item name="navitint">#FFFFFF</item>
-        <item name="android:textColorPrimary">#FFFFFF</item>
-        <item name="colorControlNormal">#FFFFFF</item>
-    </style>
-
-    <!--Default Calendar Style-->
-    <style name="DefaultCalendarViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">
-        <!--<item name="android:textColor">#000000</item>-->
-        <item name="android:weekNumberColor">@color/colorAccent</item>
-    </style>
-
-    <style name="DefaultCalendarViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
-        <item name="android:textColor">#000000</item>
-    </style>
+## 사용법
 
 
-    <!--Dark Calendar Style-->
-    <style name="CalendarViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">
-        <item name="android:textColor">#FFFFFF</item>
-        <item name="android:weekNumberColor">@color/colorAccent</item>
-    </style>
-
-    <style name="CalendarViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
-        <item name="android:textColor">#FFFFFF</item>
-    </style>
-
-
-    <!--Dialog Style-->
-    <style name="Dialog" parent="Theme.AppCompat.Dialog">
-        <item name="android:windowBackground">@color/deepdarkblack</item>     <!--Dialog background-->
-        <item name="android:textColorPrimary">#FFFFFF</item>    <!--content text color-->
-        <item name="android:windowMinWidthMajor">@dimen/dialog_min_width_major</item> <!--화면 비율-->
-        <item name="android:windowMinWidthMinor">@dimen/dialog_min_width_minor</item> <!--화면 비율-->
-
-        <item name="android:windowTitleStyle">@style/MyTitleTextStyle</item> <!--title text style-->
-
-        <item name="colorAccent">@color/colorAccent</item>     <!--Button text color-->
-        <item name="android:windowNoTitle">false</item>
-        <item name="android:windowIsFloating">true</item>
-    </style>
-
-    <!--Dialog Title Style-->
-    <style name="MyTitleTextStyle">
-        <item name="android:textColor">#FFFFFF</item>
-        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
-    </style>
-
-
-
-</resources>
-```
-
-`AppTheme`은 기본테마이고 `DarkTheme`는 새로 적용할 테마이다. 
-
-위에서 새로추가한 `attrs` 아이템들과 적용할 색상을 지정해주었다.
-
-또한 이외 따로 적용시킬 달력스타일과 Dialog 스타일도 정의해주었다.
-
-
-## 테마 변경 
-
-
-> xml 테마지정
-
-```xml
-<CalendarView
-            android:id="@+id/calendarView"
-            android:layout_width="match_parent"
-
-            android:dateTextAppearance="@style/CalendarViewDateCustomText"
-            android:weekDayTextAppearance="@style/CalendarViewWeekCustomText"
-            android:layout_height="wrap_content"/>
-
-
-        <TextView
-            android:id="@+id/whenDate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/calendarView"
-            android:gravity="center_horizontal"
-            android:textColor="?attr/textcolor"
-            android:text="date"
-            android:textSize="24dp"/>
-
-        <TextView
-            android:id="@+id/scheduleText"
-            android:layout_below="@+id/whenDate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="?attr/textcolor"/>
-       
-```
-
-테마가 지정될 xml 아이템에 `?attr/color`를 지정해준다.
-
-
-> 테마 변경 스위치
+> SharedPreference 클래스 생성
 
 ```java
- // 앱 테마 변경
-switchdark.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener()
+public class SharedPref
 {
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue)
+    private SharedPreferences mySharedPref;
+    private Context context;
+
+
+    public SharedPref(Context context)
     {
-        if (switchdark.isChecked())
-        {
-           
-            sharedPref.setNightModeState(false);
-            switchdark.setChecked(false);
-            restartApp();
-        } else
-        {
-            sharedPref.setNightModeState(true);
-            switchdark.setChecked(true);
-            
-            restartApp();
-        }
-        return false;
+        mySharedPref = context.getSharedPreferences("pref", Context.MODE_PRIVATE);
     }
-});
-```
-
-```java
-// 테마 변경시 앱 재시작
-public void restartApp()   
-{
-    Intent intent = new Intent(getActivity().getApplicationContext(), MainActivity.class);
-    startActivity(intent);
-    getActivity().finish();
-}
-```
-
-스위치 클릭시 현재 상태에 따라 테마 상태 `boolean`값을 [SharedPreference]()를 이용해 저장하고 앱을 재시작한다. 
-
-* `SharedPreference`를 이용하면 앱을 껐다 켜도 설정된 테마가 유지된다.
-
-> 테마 적용
-
-```java
-// 테마적용
-protected void onCreate(@Nullable Bundle savedInstanceState)
-{
-    sharedPref =new SharedPref(this);
-
-    // 테마
-    if (sharedPref.loadNightModeState())
+    public void setNightModeState(boolean state)
     {
-        setTheme(R.style.DarkTheme);
-    }
-    else
-    {
-        setTheme(R.style.AppTheme);
+        SharedPreferences.Editor editor = mySharedPref.edit();
+        editor.putBoolean("NightMode",state);
+        editor.apply();
     }
 
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.addschedule);
+    public Boolean loadNightModeState()
+    {
+        return mySharedPref.getBoolean("NightMode",false);
+    }
+
 }
 ```
+생성자에서 `pref`라는 파일에 `MODE_PRIVATE`모드로 저장하도록 생성자를 만들어준다음 상태를 저장하고 불러오는 메소드를 정의했다.
 
-액티비티에서 `뷰가 생성되기전`에 저장된 `boolean`값을 체크하고 `setTheme`를 이용해 `styles`에 저장해준 테마를 적용시킨다.
+MODE에는 총3가지가 있다
 
+[MODE_PRIVATE : 이 앱안에서 데이터 공유]
 
+[MODE_WORLD_READABLE : 다른 앱과 데이터 읽기 공유]
 
-> 그 외 테마 적용 
+[MODE_WORLD_WRITEABLE : 다른 앱과 데이터 쓰기 공유]
+
+`setNightModeState`와 `loadNightModeState` 테마 설정 상태를 저장하고 불러오도록 한다. 이때 키 값은 `NightMode`이다.
+
+> SharedPreference 사용
 
 ```java
-// 테마에 따른 캘린더, Dialog 스타일 변경
-if (sharedPref.loadNightModeState())
-{
-    mCalendarView.setDateTextAppearance(R.style.CalendarViewDateCustomText);
-    mCalendarView.setWeekDayTextAppearance(R.style.CalendarViewWeekCustomText);
-    builder =  new AlertDialog.Builder(getActivity(), R.style.Dialog);
-}
-else
-{
-    mCalendarView.setDateTextAppearance(R.style.DefaultCalendarViewDateCustomText);
-    mCalendarView.setWeekDayTextAppearance(R.style.DefaultCalendarViewWeekCustomText);
-    builder =  new AlertDialog.Builder(getActivity());
-}
-```
+private SharedPref sharedPref;
 
-캘린더나 다이얼로그처럼 따로 테마를 지정해줘야 하는부분은 마찬가지로 저장된 `Boolean`값으로 지정해준다.
+sharedPref = new SharedPref(getActivity());
+
+sharedPref.setNightModeState(값);
+sharedPref.loadNightModeState()
+
+```
+객체를 생성하고 값을 저장할때는 `sharedPref.setNightModeState(값);`을
+
+불러올때는 `sharedPref.loadNightModeState()`을 사용한다.
+
 
 ## 실행 결과
 
-![1](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Android/theme/GIF.gif?raw=true)
+![1](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/Android/shared%20preference/GIF.gif?raw=true)
 
-
-## 참고자료
-
-[https://youtu.be/-qsHE3TpJqw](https://youtu.be/-qsHE3TpJqw)
 
