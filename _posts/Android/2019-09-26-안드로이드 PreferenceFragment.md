@@ -24,7 +24,7 @@ sidebar_main: true
 
 ## 사용방법
 
-> Gradel 추가
+> Gradle 추가
 
 ```java
 implementation 'com.android.support:preference-v7:28.0.0'
