@@ -33,7 +33,7 @@ sidebar_main: true
 
 > Service를 시작하는 인텐트
 
-`getService(Context, int, Intent, int)
+`getService(Context, int, Intent, int)`
 
 ## 예제
 
