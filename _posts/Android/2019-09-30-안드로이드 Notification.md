@@ -91,7 +91,7 @@ public void show()
 
 데이터 베이스에 저장된 일정을 `StringBuffer`인 `mDialogContent`에 저장시킨 다음 `NotificationCompat.Builder` 개체를 생성하고 제목, 아이콘 , 내용(mDialogContent)를 세팅했다.
 
-그리고 `PendingIntent`에 액티비티에 대한 정보를 담은다음 `NotificationChannel` 를 구성 해주었다.
+그리고 [PendingIntent](https://lesslate.github.io/android/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%ED%8E%9C%EB%94%A9-%EC%9D%B8%ED%85%90%ED%8A%B8(Pending-Intent)/)에 액티비티에 대한 정보를 담은다음 `NotificationChannel` 를 구성 해주었다.
 
 `NotificationChannel` 은 안드로이드8.0(오레오) 부터 필수로 사용되었으며 채널을 통해 각각의 `Notification`의 진동이나 소리등의 중요도를 관리 할 수 있다.
 
