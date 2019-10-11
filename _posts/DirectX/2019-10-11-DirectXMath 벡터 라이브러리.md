@@ -1,7 +1,7 @@
 ---
 title: "DirectXMath 벡터 라이브러리"
 categories: 
-  - OnlineJudge
+  - DirectX
 last_modified_at: 2019-10-11T13:00:00+09:00
 tags: 
   - DirectX
