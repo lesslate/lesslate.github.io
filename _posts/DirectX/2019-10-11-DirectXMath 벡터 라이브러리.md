@@ -27,7 +27,8 @@ sidebar_main: true
 
 ![1](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/DirectX/vector/simd.png?raw=true)
 
-병렬 프로세서의 한 종류로 하나의 명령어로 여러 개의 값을 동시에 계산한다.[^1]
+병렬 프로세서의 한 종류로 하나의 명령어로 여러 개의 값을 동시에 계산한다.
+[^1]
 
 [^1] : [https://ko.wikipedia.org/wiki/SIMD](https://ko.wikipedia.org/wiki/SIMD)
 
