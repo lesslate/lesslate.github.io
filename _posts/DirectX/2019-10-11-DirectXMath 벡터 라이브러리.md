@@ -385,7 +385,7 @@ XMFINLINE bool XM_CALLCONV XMVector3NearEqual(
 
 ## 참고자료
 
-[^1] : [위키백과](https://ko.wikipedia.org/wiki/SIMD)
+[^1]:[wiki](https://ko.wikipedia.org/wiki/SIMD)
 
 [https://docs.microsoft.com/ko-kr/windows/win32/dxmath/pg-xnamath-getting-started?redirectedfrom=MSDN#type_usage_guidelines_](https://docs.microsoft.com/ko-kr/windows/win32/dxmath/pg-xnamath-getting-started?redirectedfrom=MSDN#type_usage_guidelines_)
 
