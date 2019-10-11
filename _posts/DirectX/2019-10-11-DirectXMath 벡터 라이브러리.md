@@ -29,7 +29,6 @@ sidebar_main: true
 
 병렬 프로세서의 한 종류로 하나의 명령어로 여러 개의 값을 동시에 계산한다. [^1]
 
-[^1] :[https://ko.wikipedia.org/wiki/SIMD](https://ko.wikipedia.org/wiki/SIMD)
 
 > DirectXMath 라이브러리 사용
 
@@ -243,7 +242,7 @@ return fRadians * (180.0f / XM_PI);
 
 ```cpp
 template<class T> inline T XMMin(T a, T b) { return (a < b) ? a : b; }
-template<calss T> inline T XMMax(T a, T b) { return (a < b) ? a : b; }
+template<class T> inline T XMMax(T a, T b) { return (a < b) ? a : b; }
 ```
 
 
@@ -385,6 +384,8 @@ XMFINLINE bool XM_CALLCONV XMVector3NearEqual(
 ```
 
 ## 참고자료
+
+[^1] : [https://ko.wikipedia.org/wiki/SIMD](https://ko.wikipedia.org/wiki/SIMD)
 
 [https://docs.microsoft.com/ko-kr/windows/win32/dxmath/pg-xnamath-getting-started?redirectedfrom=MSDN#type_usage_guidelines_](https://docs.microsoft.com/ko-kr/windows/win32/dxmath/pg-xnamath-getting-started?redirectedfrom=MSDN#type_usage_guidelines_)
 
