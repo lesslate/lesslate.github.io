@@ -22,6 +22,8 @@ sidebar_main: true
 
 ## 머신러닝 알고리즘
 
+![1](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/ai/ml/1.png?raw=true)
+
 머신러닝의 학습 알고리즘은 `Supervised learning`과 `Unsupervised learning`, `Reinforcement Learning`으로 분류될 수 있다.
 
 > 지도 학습(Supervised Learning)
@@ -30,6 +32,8 @@ sidebar_main: true
 `Supervised Learning`은 데이터에 대한 `Label(명시적 정답)`이 달려있는 `training set`를 바탕으로 학습시키는 방법이다. 
 
 예를들면 공부시간과 시험점수를 바탕으로 결과를 예측하거나 숫자 이미지를 학습해 맞는 숫자를 예측하는지를 확인할 수 있다.
+
+![2](https://github.com/lesslate/lesslate.github.io/blob/master/assets/img/ai/ml/2.png?raw=true)
 
 이 때 시험점수를 예측한다면 `regression(회귀)` 시험을 통과했는지 분류하려면 `binary classification`으로 구분할 수 있다. 또한 등급으로 나눈다면 `multi-label classification`으로 구분된다.
 
