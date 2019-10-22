@@ -1,9 +1,10 @@
 ---
 title: "머신러닝 (Machine Learning)"
 categories: 
-  - DataStructure
+  - AI
 last_modified_at: 2019-10-22T13:00:00+09:00
 tags:
+- Machine Learning
 - AI
 toc: true
 sidebar_main: true
