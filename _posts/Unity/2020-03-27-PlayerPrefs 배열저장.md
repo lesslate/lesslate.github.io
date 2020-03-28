@@ -38,7 +38,7 @@ public class arraytest : MonoBehaviour
 
         string strArr = ""; // 문자열 생성
 
-        for (int i = 0; i < number.Length; i++) 배열과 ','를 번갈아가며 tempStr에 저장
+        for (int i = 0; i < number.Length; i++) // 배열과 ','를 번갈아가며 tempStr에 저장
         {
             strArr = strArr + number[i];
             if (i < number.Length - 1) // 최대 길이의 -1까지만 ,를 저장
