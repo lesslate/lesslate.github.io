@@ -1,5 +1,5 @@
 ---
-title: "PlayerPrefs 배열저장"
+title: "유니티 PlayerPrefs 배열저장"
 categories: 
   - Unity
 last_modified_at: 2020-03-27T13:00:00+09:00
