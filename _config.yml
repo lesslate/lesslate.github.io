@@ -104,7 +104,7 @@ author:
   avatar           : "/assets/img/Profile3.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "The journey is the reward."
   location         : "Republic of Korea"
-  email            : "lesslate9@naver.com"
+  email            : "slate9@kakao.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -117,7 +117,7 @@ author:
   gitlab           :
   google_plus      :
   keybase          :
-  instagram        : "chan_ikwon"
+  instagram        :
   lastfm           :
   linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
