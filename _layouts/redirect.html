@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="{{ page.redirect_url }}">
+  <meta http-equiv="refresh" content="0; url={{ page.redirect_url }}">
+  <script>location.replace("{{ page.redirect_url }}" + location.hash);</script>
+</head>
+<body style="background:#141010;color:#fff6fb;font-family:sans-serif;padding:24px">
+  <p>이 페이지는 새 주소로 이동했습니다. / This page has moved.</p>
+  <p><a style="color:#f21368" href="{{ page.redirect_url }}">{{ page.redirect_url }}</a></p>
+</body>
+</html>
