@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slate Games</title>
+  <meta name="description" content="Slate - 1인 모바일 게임 개발자. 우주해병 키우기(Mini Space Marine : Semi Idle) 개발.">
+  <meta property="og:title" content="Slate Games">
+  <meta property="og:description" content="1인 모바일 게임 개발자 Slate의 게임 소개 페이지">
+  <meta property="og:image" content="https://lesslate.github.io/assets/img/games/spacemarine.png">
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    :root {
+      --bg: #141010;
+      --bg-raise: #1d1718;
+      --bg-card: #221b1c;
+      --border: #433d3e;
+      --text: #fff6fb;
+      --muted: #b9adb3;
+      --primary: #f21368;
+      --primary-hover: #f54e8e;
+      --footer: #180206;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      line-height: 1.6;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { color: var(--primary-hover); }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+
+    /* masthead (blog style) */
+    .masthead { border-bottom: 1px solid var(--border); }
+    .masthead .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .brand { color: var(--text); font-weight: 700; font-size: 1.15rem; letter-spacing: .02em; }
+    .brand span { color: var(--primary); }
+    .nav a { color: var(--text); margin-left: 20px; font-size: .95rem; }
+    .nav a:hover { color: var(--primary); }
+
+    /* hero */
+    .hero { padding: 72px 0 48px; }
+    .eyebrow { color: var(--primary); font-weight: 700; font-size: .85rem; letter-spacing: .14em; text-transform: uppercase; margin: 0 0 12px; }
+    .hero h1 { font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.15; margin: 0 0 16px; }
+    .hero p { color: var(--muted); font-size: 1.05rem; max-width: 600px; margin: 0; }
+
+    section { padding: 32px 0; }
+    h2 { font-size: 1.4rem; margin: 0 0 20px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+
+    /* game card */
+    .game {
+      display: grid; grid-template-columns: 180px 1fr; gap: 28px;
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 24px;
+    }
+    .game img { width: 180px; height: 180px; border-radius: 22%; display: block; box-shadow: 0 0 0 1px var(--border), 0 8px 28px rgba(242, 19, 104, .18); }
+    .game h3 { margin: 0 0 4px; font-size: 1.5rem; }
+    .game .sub { color: var(--muted); margin: 0 0 12px; font-size: .95rem; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 14px; padding: 0; list-style: none; }
+    .tags li { font-size: .78rem; color: var(--text); border: 1px solid var(--border); background: var(--bg-raise); border-radius: 999px; padding: 2px 10px; }
+    .game p.desc { margin: 0 0 18px; color: var(--text); }
+    .stores { display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--primary); color: var(--text); font-weight: 600; font-size: .95rem;
+      padding: 10px 18px; border-radius: 8px; border: 1px solid transparent;
+    }
+    .btn:hover { background: var(--primary-hover); color: var(--text); }
+    .btn.ghost { background: transparent; border-color: var(--border); }
+    .btn.ghost:hover { border-color: var(--primary); color: var(--text); }
+    .btn svg { width: 18px; height: 18px; fill: currentColor; }
+
+    /* info list */
+    .info { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .info div { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; }
+    .info h4 { margin: 0 0 6px; font-size: .8rem; color: var(--muted); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+    .info p { margin: 0; word-break: break-all; }
+
+    footer { margin-top: 48px; background: var(--footer); border-top: 1px solid var(--border); }
+    footer .wrap { padding: 24px 16px; color: var(--muted); font-size: .85rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+
+    @media (max-width: 600px) {
+      .hero { padding: 48px 0 32px; }
+      .game { grid-template-columns: 1fr; gap: 18px; padding: 20px; }
+      .game img { width: 120px; height: 120px; }
+      .nav a { margin-left: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap">
+      <a class="brand" href="/games/">Slate <span>Games</span></a>
+      <nav class="nav">
+        <a href="#games">Games</a>
+        <a href="#contact">Contact</a>
+        <a href="/">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <p class="eyebrow">Indie Mobile Game Developer</p>
+      <h1>Slate</h1>
+      <p>대한민국의 1인 모바일 게임 개발자입니다. Unity로 Android · iOS 게임을 만들고 운영합니다.<br>
+        An independent mobile game developer from the Republic of Korea, building games with Unity.</p>
+    </div>
+
+    <section id="games">
+      <h2>Games</h2>
+      <article class="game">
+        <img src="/assets/img/games/spacemarine.png" alt="우주해병 키우기 아이콘" width="180" height="180">
+        <div>
+          <h3>우주해병 키우기</h3>
+          <p class="sub">Mini Space Marine : Semi Idle</p>
+          <ul class="tags">
+            <li>Idle RPG</li><li>Shooter</li><li>Android</li><li>iOS</li>
+          </ul>
+          <p class="desc">우주 해병을 성장시키며 행성을 넘나드는 방치형 슈팅 RPG. 월드 보스, 디펜스, 던전, 장비 · 스킬 강화까지 즐길 수 있습니다.<br>
+            Grow your space marine, conquer planets, take down world bosses and upgrade your gear in this semi-idle shooter.</p>
+          <div class="stores">
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.slate.spacemarine" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l.1.1 9.9-9.9v-.2L3.7 1.7l-.1.1zm13.3 13.4-3.3-3.3v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.7 0 2.3l-3.9 2.2h-.1zm-.1.1L13.4 12 3.6 21.8c.4.4 1 .4 1.7.1l11.5-6.6M16.8 8.7 5.3 2.1c-.7-.4-1.3-.3-1.7.1L13.4 12l3.4-3.3z"/></svg>
+              Google Play
+            </a>
+            <a class="btn" href="https://apps.apple.com/us/app/mini-space-marine-semi-idle/id1502736505" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9 0 0-2.7-1-2.7-4.1zM13.9 5c.7-.9 1.2-2 1.1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.1.1 2.3-.6 3-1.5z"/></svg>
+              App Store
+            </a>
+            <a class="btn ghost" href="/etc/개인정보-처리방침/">개인정보 처리방침 · Privacy Policy</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="info">
+        <div>
+          <h4>Developer</h4>
+          <p>Slate</p>
+        </div>
+        <div>
+          <h4>Email</h4>
+          <p><a href="mailto:slate9@kakao.com">slate9@kakao.com</a></p>
+        </div>
+        <div>
+          <h4>Location</h4>
+          <p>Republic of Korea</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>&copy; Slate Games</span>
+      <span><a href="/">Slate Blog</a> · <a href="https://github.com/lesslate" target="_blank" rel="noopener">GitHub</a></span>
+    </div>
+  </footer>
+</body>
+</html>
